@@ -1,4 +1,4 @@
-# TrustLayer — NYC 311 Data Quality & Pipeline Monitoring
+# TrustLayer — Data Quality & Pipeline Monitoring
 
 [![TrustLayer CI](https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
