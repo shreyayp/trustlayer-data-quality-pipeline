@@ -286,3 +286,76 @@ This is a portfolio-scale learning project, not a production monitoring service.
 - Record the date and query used for real-data extracts in project write-ups.
 - Do not commit credentials, large raw extracts, local database files, or personally identifying information.
 - Follow the source's terms and API usage guidance.
+
+
+## 16. Real-Data Experiment
+
+### Objective
+
+Validate the TrustLayer data quality pipeline against a real extract of NYC 311 service requests obtained from NYC Open Data.
+
+### Data Source
+
+- **Dataset:** 311 Service Requests from 2020 to Present
+- **Publisher:** NYC Open Data
+- **Source:** https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2020-to-Present/erm2-nwe9
+- **Extraction start date:** January 1, 2025
+- **Extract size:** 1,000 records
+
+The pipeline downloads a limited extract for local testing rather than processing the entire NYC 311 dataset.
+
+### How to Reproduce
+
+Run these commands from the project root with the virtual environment activated.
+
+Download up to 1,000 records:
+
+```bash
+python -m src.trustlayer.download_nyc311 --limit 1000 --since "2025-01-01T00:00:00"
+```
+
+Run the data quality pipeline:
+
+```bash
+PYTHONPATH=src python -m trustlayer.pipeline --input data/raw/nyc311_recent.csv
+```
+
+Run the automated tests:
+
+```bash
+python -m pytest -q
+```
+
+
+### Observed Results
+
+During the recorded local experiment on October 29, 2026:
+
+| Metric | Result |
+|---|---:|
+| Input records | 1,000 |
+| Valid records | 1,000 |
+| Rejected records | 0 |
+| Database changes reported | 1,000 |
+| Automated tests passed | 8 |
+
+The pipeline completed successfully, and all eight automated tests passed.
+
+
+### Interpretation and Limitations
+
+All 1,000 records in this extract passed the validation rules implemented in TrustLayer. This does not establish that the source dataset is free of data quality issues.
+
+The results apply only to this particular extract and the current validation rules. They should not be interpreted as citywide statistics or as a complete assessment of NYC 311 data quality.
+
+The extract may change when downloaded again because the source dataset is updated over time.
+
+### Engineering Practices Demonstrated
+
+- Extracting data from a public data API
+- Validating required fields, timestamps, and duplicate keys
+- Separating valid records from rejected records
+- Persisting pipeline data and execution metrics in SQLite
+- Generating data quality reports
+- Testing validation and pipeline behavior with pytest
+- Automating test execution using GitHub Actions
