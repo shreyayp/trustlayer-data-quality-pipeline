@@ -1,6 +1,6 @@
 # TrustLayer — NYC 311 Data Quality & Pipeline Monitoring
 
-[![TrustLayer CI](https://github.com/OWNER/REPOSITORY/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/REPOSITORY/actions/workflows/ci.yml)
+[![TrustLayer CI](https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline/actions/workflows/ci.yml/badge.svg)](https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline/actions/workflows/ci.yml)
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![SQL](https://img.shields.io/badge/SQL-SQLite-lightgrey)
 ![CI](https://img.shields.io/badge/CI-GitHub_Actions-2088FF)
@@ -127,7 +127,7 @@ For real-data analysis, run the downloader and record the download date and row 
 ### macOS / Linux
 
 ```bash
-git clone https://github.com/OWNER/REPOSITORY.git
+git clone https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline.git
 cd trustlayer-nyc311-data-quality-pipeline
 
 python3 -m venv .venv
@@ -142,7 +142,7 @@ PYTHONPATH=src pytest -v
 ### Windows PowerShell
 
 ```powershell
-git clone https://github.com/OWNER/REPOSITORY.git
+git clone https://github.com/shreyayp/trustlayer-nyc311-data-quality-pipeline.git
 cd trustlayer-nyc311-data-quality-pipeline
 
 py -m venv .venv
@@ -155,7 +155,7 @@ python -m trustlayer.pipeline
 python -m pytest -v
 ```
 
-Replace `OWNER/REPOSITORY` with the actual GitHub repository path after publishing.
+Replace `shreyayp/trustlayer-nyc311-data-quality-pipeline` with the actual GitHub repository path after publishing.
 
 ## 8. Expected sample run
 
