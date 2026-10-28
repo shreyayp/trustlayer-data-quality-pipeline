@@ -1,0 +1,19 @@
+{
+  "project": "TrustLayer",
+  "description": "Data quality and pipeline observability demonstration",
+  "valid_records_in_database": 12,
+  "rejected_record_events": 8,
+  "latest_run": {
+    "run_id": 1,
+    "started_at": "2026-10-28T19:02:16.485636+00:00",
+    "finished_at": "2026-10-28T19:02:16.514398+00:00",
+    "status": "SUCCESS",
+    "input_rows": 20,
+    "valid_rows": 12,
+    "rejected_rows": 8,
+    "inserted_rows": 12,
+    "duration_seconds": 0.0288,
+    "error_message": null
+  },
+  "note": "Counts reflect this local database and all run history; reruns may add rejection events."
+}

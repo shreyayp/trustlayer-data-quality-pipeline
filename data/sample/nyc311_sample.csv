@@ -1,0 +1,21 @@
+unique_key,created_date,closed_date,agency,complaint_type,descriptor,incident_zip,status
+100001,2026-02-01T10:00:00,2026-02-02T12:00:00,DOT,Pothole,Road surface issue,10001,Closed
+100002,2026-02-01T11:15:00,,DSNY,Missed Collection,Trash not collected,10002,Open
+100003,2026-02-02T09:30:00,2026-02-03T14:20:00,NYPD,Noise - Residential,Loud music,10003,Closed
+100004,2026-02-02T13:00:00,,HPD,Heat/Hot Water,No heat,10004,Open
+100005,2026-02-03T08:45:00,2026-02-03T16:00:00,DOT,Street Condition,Damaged sign,10005,Closed
+100006,2026-02-03T10:30:00,,DSNY,Illegal Dumping,Debris,10006,Open
+100007,2026-02-04T12:00:00,2026-02-05T09:00:00,DEP,Water System,Leak,10007,Closed
+100008,2026-02-04T16:20:00,,NYPD,Noise - Commercial,Loud sound,10008,Open
+100009,2026-02-05T07:00:00,2026-02-06T10:00:00,DOT,Pothole,Road surface issue,10009,Closed
+100010,2026-02-05T11:00:00,,DSNY,Missed Collection,Recycling not collected,10010,Open
+100011,2026-02-06T08:00:00,,,Street Condition,Sign damaged,10011,Open
+100012,not-a-date,,DOT,Pothole,Malformed date,10012,Open
+100013,2026-02-06T14:00:00,2026-02-05T14:00:00,HPD,Heat/Hot Water,Closed before created,10013,Closed
+100014,2026-02-07T09:00:00,,DEP,Water System,Leak,10014,Open
+100014,2026-02-07T09:00:00,,DEP,Water System,Duplicate key,10014,Open
+,2026-02-07T10:00:00,,DOT,Pothole,Missing unique key,10015,Open
+100017,2026-02-08T10:00:00,,DSNY,,Missing problem type,10016,Open
+100018,2026-02-08T10:00:00,,HPD,Heat/Hot Water,Missing status,10017,
+100019,2026-02-09T12:00:00,,NYPD,Noise - Residential,Missing descriptor is allowed,,Open
+100020,2026-02-10T10:00:00,not-a-date,DOT,Street Condition,Bad close date,10018,Closed

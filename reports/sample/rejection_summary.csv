@@ -1,0 +1,9 @@
+rejection_reason,rejected_count
+unique_key_missing,1
+status_missing,1
+duplicate_unique_key,1
+created_date_invalid,1
+complaint_type_missing,1
+closed_date_invalid,1
+closed_before_created,1
+agency_missing,1
