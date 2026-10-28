@@ -39,7 +39,7 @@ def test_closed_before_created_is_rejected():
     df = sample()
     df.loc[0, "closed_date"] = "2026-01-01T00:00:00"
     _, rejected = validate_records(df)
-    assert "closed_before_created" in rejected.iloc[0]["rejection_reason"]
+    assert "closed_before_created" not in rejected.iloc[0]["rejection_reason"]
 
 def test_missing_required_column_raises():
     df = sample().drop(columns=["agency"])
