@@ -263,23 +263,12 @@ Detailed project guide: [`docs/06-github-actions.md`](docs/06-github-actions.md)
 └── README.md
 ```
 
-## 13. Documentation and learning path
 
-1. [Project overview](docs/01-project-overview.md)
-2. [Beginner concepts](docs/02-concepts.md)
-3. [NYC 311 data source and download instructions](docs/03-data-source.md)
-4. [Data dictionary](docs/04-data-dictionary.md)
-5. [SQL cookbook](docs/05-sql-cookbook.md)
-6. [GitHub Actions walkthrough](docs/06-github-actions.md)
-7. [Testing strategy](docs/07-testing.md)
-8. [Architecture and design decisions](docs/08-architecture.md)
-9. [Interview preparation](docs/09-interview-guide.md)
-
-## 14. Limitations and future enhancements
+## 13. Limitations and future enhancements
 
 This is a portfolio-scale learning project, not a production monitoring service. It does not include a scheduler, alerting service, or live dashboard. Potential future enhancements include configurable freshness thresholds, scheduled downloads, dbt tests, and a Streamlit monitoring UI.
 
-## 15. Responsible use and reproducibility
+## 14. Responsible use and reproducibility
 
 - Attribute NYC Open Data as the source when using real downloaded data.
 - Clearly label the included sample as synthetic.
@@ -288,7 +277,7 @@ This is a portfolio-scale learning project, not a production monitoring service.
 - Follow the source's terms and API usage guidance.
 
 
-## 16. Real-Data Experiment
+## 15. Real-Data Experiment
 
 ### Objective
 
